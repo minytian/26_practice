@@ -75,6 +75,8 @@ b, strong
 .middle_news
 	text-align: center
 	height: 25%
+	display: block
+	cursor: default
 	h1
 		color: #fff
 		font-size: 60px
@@ -110,6 +112,11 @@ b, strong
 	background-position: center
 	background-size: cover
 	width: 100%
+	transition: all .6s ease-out
+	display: inline-block
+	overflow: hidden
+	&:hover
+		transform: scale(1.05, 1.05)
 	h3
 		color: #fff
 		font-weight: 400
@@ -120,6 +127,10 @@ b, strong
 		position: absolute
 		bottom: 10px
 		left: 30px
+		&:hover
+			color: $orange
+			cursor: pointer
+	
 	
 .item-img1
 	position: relative 
