@@ -104,7 +104,7 @@ b, strong
 	grid-template-columns: 1fr 1fr 1fr
 	grid-template-rows: 1fr 1fr 
 	grid-gap: 25px
-
+	overflow: hidden
 	width: 100%
 
 
@@ -113,23 +113,29 @@ b, strong
 	background-size: cover
 	width: 100%
 	transition: all .6s ease-out
-	display: inline-block
 	overflow: hidden
-	&:hover
-		transform: scale(1.05, 1.05)
+	box-sizing: border-box
 	h3
 		color: #fff
 		font-weight: 400
 		text-transform: uppercase
 		font-size: 44px
 		letter-spacing: 0.2em
-		width: 100%
+		width: 70%
 		position: absolute
 		bottom: 10px
 		left: 30px
+		transition: .3s linear
 		&:hover
 			color: $orange
 			cursor: pointer
+	img
+		transition: transform 0.5s ease
+	&:hover
+		cursor: pointer
+		img
+			transform: scale(1.10)
+
 	
 	
 .item-img1
@@ -139,6 +145,8 @@ b, strong
 	min-width: 730px
 	height: 500px
 	display: block
+	overflow: hidden
+	box-sizing: border-box
 	img
 		position: absolute
 		left: 30px
@@ -159,6 +167,7 @@ b, strong
 		left: 20px
 		margin: 0
 		line-height: 1
+		width: 40%
 
 .item-img3
 	img
@@ -180,11 +189,15 @@ b, strong
 		bottom: 20px
 		font-size: 40px
 		line-height: 1.2
+		width: 70%
 
 .item-img6
+	overflow: hidden
 	img
 		left: 40px
 		bottom: 100px
+	h3
+		width: 100%
 
 		
 		
