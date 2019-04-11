@@ -3,13 +3,13 @@
 @import "libs"
 
 
-
 body
 	font-family: proximanova, sans-serif
 	font-size: 16px
 	min-width: 320px
 	position: relative
 	overflow-x: hidden
+	width: 100%
 
 	input, textarea
 		outline: none
@@ -250,6 +250,46 @@ b, strong
 		bottom: 260px
 		left: 445px	
 
+.foot
+	width: 100%
+	height: 150px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	align-items: center
+
+.foot-nav
+	width: 60%
+	margin-left: 30px
+	align-content: center 
+	ul
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 0
+		li
+			list-style: none
+			text-transform: uppercase
+			letter-spacing: .2em
+			a
+				color: #1a1a1a
+				text-decoration: none
+				font-weight: 600
+				padding: 5px
+				&:hover
+					color: $orange
+
+.socialweb
+	width: 25%
+	display: flex
+	flex-direction: row
+	justify-content: center
+	img
+		width: 30px
+		margin-right: 15px
+		&:hover
+			cursor: pointer
 
 
 	
