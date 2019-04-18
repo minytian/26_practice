@@ -1,6 +1,410 @@
 @import "vars"
 
 
+
+@media only screen and (min-width: 1200px)
+
+	.item-img4, .item-img5, .item-img6
+		width: 100%
+		img
+			width: 50%
+			bottom: 130px
+		h3
+			font-size: 32px
+
+	.item-img5
+		h3
+			font-size: 32px
+			width: 100%
+		img
+			width: 30%
+			bottom: 120px
+
+	.item-img6
+		img
+			width: 45%
+			bottom: 110px
+		h3
+			width: 70%
+			font-size: 32px
+			text-align: justify
+
+	.down-text
+		h3
+			top: 200px
+			left: 190px
+		span
+			bottom: 240px
+			left: 445px	
+
+
+
+@media only screen and (max-width: 1025px)
+
+	.item-img1
+		h3
+			font-size: 32px
+			letter-spacing: 0.2em
+			width: 70%
+
+	.item-img2, .item-img3
+		width: 100%
+
+	.item-img4, .item-img5, .item-img6
+		width: 100%
+		img
+			width: 60%
+			bottom: 130px
+		h3
+			font-size: 32px
+
+	.item-img5
+		h3
+			font-size: 32px
+			width: 100%
+		img
+			width: 35%
+			bottom: 120px
+
+	.item-img6
+		img
+			width: 50%
+			bottom: 120px
+		h3
+			width: 70%
+			font-size: 32px
+			text-align: justify
+	
+	.down-text
+		width: 100%
+		h3
+			font-size: 34px
+			top: 200px
+			left: 190px
+			width: 100%
+		span
+			font-size: 23px
+			bottom: 210px
+			left: 390px	
+			width: 100%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.down-text
+		h3
+			font-size: 34px
+			top: 170px
+			left: 190px
+			width: 75%
+		span
+			font-size: 23px
+			bottom: 180px
+			left: 390px	
+			width: 35%
+		
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.logo
+		display: block
+		width: 20% 
+		
+	.menu__top
+		width: 50%
+		font-size: 15px
+
+	.middle_news
+		h1
+			font-size: 40px
+		span
+			font-size: 25px
+
+	.center
+		padding: 30px 30px
+
+	.center-news
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-template-rows: 1fr 1fr 1fr
+		grid-gap: 15px
+		overflow: hidden
+		width: 100%
+
+	.item-img1 
+		width: 100%
+		height: 450px
+		background-position: center
+		background-size: 100% 100%
+		img
+			position: absolute
+			left: 30px
+			bottom: 100px
+		h3
+			font-size: 44px
+
+	.item-img4, .item-img5, .item-img6
+		width: 100%
+		height: 430px
+		position: relative
+		display: block
+		background-position: center
+		background-size: 100% 100%
+		img
+			position: absolute
+			left: 40px
+			bottom: 120px
+			width: 50%
+		h3
+			bottom: 20px
+			font-size: 32px
+			line-height: 1.2
+			width: 70%
+
+
+	.item-img5
+		img
+			width: 30%
+
+
+	.item-img6
+		img
+			width: 40%
+		h3
+			width: 40%
+
+	.down
+		width: 100%
+		height: 100%
+
+	.down-text
+		h3
+			font-size: 26px
+			top: 130px
+			left: 150px
+			width: 75%
+		span
+			font-size: 18px
+			bottom: 150px
+			left: 280px
+			width: 35%
+
+	.foot
+		height: 110px
+		justify-content: space-around
+
+	.foot-nav
+		width: 60%
+		margin-left: 0
+		align-content: center 
+		ul
+			justify-content: flex-start
+			padding-left: 0
+			li
+				a
+					color: #1a1a1a
+					text-decoration: none
+					font-weight: 600
+					padding: 5px
+					font-size: 14px
+				&:hover
+					color: $orange
+	
+	.socialweb
+		width: 25%
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		img
+			width: 20px
+			margin-right: 15px
+			&:hover
+				cursor: pointer
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.bg-images
+		height: 80vh
+		margin-bottom: 10px
+
+	.logo
+		display: block
+		width: 25% 
+
+		
+	.menu__top
+		width: 40%
+		height: 130px
+		font-size: 13px
+		ul
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+
+
+	.middle_news
+		h1
+			font-size: 30px
+		span
+			font-size: 22px
+
+	.center
+		padding: 0
+		margin: 0
+		margin-bottom: 10px
+
+	.center-news-item
+		h3
+			font-size: 28px
+
+	.center-news
+		display: flex
+		flex-direction: column
+		overflow: hidden
+		width: 100%
+
+	.item-img1 
+		width: 100%
+		height: 400px
+		background-position: center
+		background-size: 100% 100%
+		img
+			position: absolute
+			left: 30px
+			bottom: 70px
+		h3
+			font-size: 28px
+
+	.item-img2
+		width: 100%
+		height: 400px
+		background-position: center
+		background-size: 100% 100%
+
+	.item-img3
+		width: 100%
+		height: 400px
+		background-position: center
+		background-size: 100% 100%
+
+	.item-img4, .item-img5, .item-img6
+		width: 100%
+		height: 400px
+		position: relative
+		display: block
+		background-position: center
+		background-size: 100% 100%
+		img
+			position: absolute
+			left: 40px
+			bottom: 120px
+			width: 35%
+		h3
+			bottom: 20px
+			font-size: 32px
+			line-height: 1.2
+			width: 70%
+			font-size: 28px
+
+
+	.item-img5
+		width: 100%
+		img
+			width: 25%
+
+
+	.item-img6
+		width: 100%
+		img
+			width: 30%
+			bottom: 80px
+		h3
+			width: 50%
+
+	.down
+		width: 100%
+		height: 100%
+
+	.down-text
+		h3
+			font-size: 26px
+			top: 50px
+			left: 110px
+		span
+			font-size: 18px
+			bottom: 50px
+			left: 120px	
+
+	.foot
+		height: 110px
+		justify-content: space-between
+		height: 150px
+
+	.foot-nav
+		width: 40%
+		margin-left: 0
+		align-content: center 
+		ul
+			justify-content: space-between
+			flex-direction: column
+			padding-left: 0
+			li
+				a
+					color: #1a1a1a
+					text-decoration: none
+					font-weight: 600
+					padding: 5px
+					font-size: 14px
+				&:hover
+					color: $orange
+	
+	.socialweb
+		width: 10%
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		img
+			width: 23px
+			margin-bottom: 10px
+			&:hover
+				cursor: pointer
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
 /*==========  Desktop First  ==========*/
 
 // ≥1200px
